@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Gallery</title>
+  <link rel="shortcut icon" type="img/x-icon" href="img/favicon.ico">
+</head>
+
+<body>
+<ul>
+  <li><a href="file:///C:/website%20ind/Index.html" target="_blank">Home</a></li>
+  <li><a href="file:///C:/website%20ind/My%20Biodata.html" target="_blank">My Biodata</a></li>
+  <li><a href="file:///C:/website%20ind/Experience.html" target="_blank">Experience</a></li>
+  <li><a href="file:///C:/website%20ind/Education.html" target="_blank">Education</a></li>
+  <li><a href="file:///C:/website%20ind/family.html">Family</a></li>
+  <li><a class="active" href="#MyGallery">My Gallery</a></li>
+  </ul> 
+
+
+
+
+<h1 style="text-align:left; margin: 40px; color: whitesmoke; font-family: Georgia, serif;">High School Gallery.</h1>
+
+<div class="slideshow-container">
+<div class="mySlides1">
+    <p align="center"><img src="img/diploma.jpg" style="width:250" height="250"></p>
+  </div>
+
+<div class="mySlides1">
+    <p align="center"><img src="img/diploma1.jpg" style="width:250" height="250"></p>
+  </div>
+
+<div class="mySlides1">
+    <p align="center"><img src="img/diploma2.jpg" style="width:250" height="250"></p>
+  </div>
+
+<div class="mySlides1">
+    <p align="center"><img src="img/diploma3.jpg" style="width:250" height="250"></p>
+  </div>
+
+<div class="mySlides1">
+    <p align="center"><img src="img/hdiploma4.jpg" style="width:250" height="250"></p>
+  </div>
+
+<div class="mySlides1">
+    <p align="center"><img src="img/diploma5.jpg" style="width:250" height="250"></p>
+  </div>
+
+<div class="mySlides1">
+    <p align="center"><img src="img/diploma6.jpg" style="width:250" height="250"></p>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
