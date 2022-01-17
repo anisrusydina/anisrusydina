@@ -4,31 +4,6 @@
   background-attachment: fixed;  
   background-size: cover;
 }
-ul {
-  list-style-type: none;
-  margin: 20;
-  padding: 20;
-}
-
-li {
-  display: inline;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 21px 75px;
-  background-color: #454545;
-}
-li a:hover {
-  background-color: #111;
-}
-  <style>
 * {box-sizing: border-box}
 .mySlides1, .mySlides2, {display: none}
 img {vertical-align: middle;}
@@ -66,7 +41,4 @@ img {vertical-align: middle;}
 .prev:hover, .next:hover {
   background-color: #BCC6CC;
   color: black;
-}
-.active {
-  background-color: #111;
 }
